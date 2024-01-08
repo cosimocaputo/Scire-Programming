@@ -16,35 +16,35 @@ CREATE TABLE [dbo].[T_Books](
 GO
 SET IDENTITY_INSERT [dbo].[T_Books] ON 
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (16, N'Der Herr der Ringe', N'J. R. R. Tolkien', N'German', 100, N'Fantasy', CAST(N'2024-01-08T23:19:19.6333333' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Der Herr der Ringe', N'J. R. R. Tolkien', N'German', 100, N'Fantasy')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (17, N'Die Säulen der Erde', N'Ken Follett', N'German', 50, N'Novel', CAST(N'2024-01-08T23:19:19.6333333' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Die Säulen der Erde', N'Ken Follett', N'German', 50, N'Novel')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (18, N'Harry Potter and the Philosopher''s Stone', N'J. K. Rowling', N'English', 120, N'Fantasy', CAST(N'2024-01-08T23:19:19.6333333' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Harry Potter and the Philosopher''s Stone', N'J. K. Rowling', N'English', 120, N'Fantasy')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (19, N'The Plague', N'Albert Camus', N'French', 12, N'Classics', CAST(N'2024-01-08T23:19:19.6333333' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'The Plague', N'Albert Camus', N'French', 12, N'Classics')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (20, N'Das Parfum', N'Patrick Süskind', N'Italian', 12, N'Poetry', CAST(N'2024-01-08T23:19:19.6333333' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Das Parfum', N'Patrick Süskind', N'Italian', 12, N'Poetry')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (21, N'War and Peace', N'Leo Tolstoy', N'Russian', 36, N'Classics', CAST(N'2024-01-08T23:19:19.6333333' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'War and Peace', N'Leo Tolstoy', N'Russian', 36, N'Classics')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (22, N'Nineteen Eighty-Four', N'George Orwell', N'English', 30, N'Classics', CAST(N'2024-01-08T23:19:19.6366667' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Nineteen Eighty-Four', N'George Orwell', N'English', 30, N'Classics')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (23, N'Andromeda Nebula', N'Ivan Yefremov', N'Russian', 20, N'Science fiction', CAST(N'2024-01-08T23:19:19.6366667' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Andromeda Nebula', N'Ivan Yefremov', N'Russian', 20, N'Science fiction')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (24, N'Der kleine Prinz', N'Antoine de Saint-Exupéry', N'German', 200, N'Kids', CAST(N'2024-01-08T23:19:19.6366667' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Der kleine Prinz', N'Antoine de Saint-Exupéry', N'German', 200, N'Kids')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (25, N'The Stranger', N'Albert Camus', N'French', 10, N'Classics', CAST(N'2024-01-08T23:19:19.6366667' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'The Stranger', N'Albert Camus', N'French', 10, N'Classics')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (26, N'The Adventures of Pinocchio', N'Carlo Collodi', N'Italian', 35, N'Kids', CAST(N'2024-01-08T23:19:19.6366667' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'The Adventures of Pinocchio', N'Carlo Collodi', N'Italian', 35, N'Kids')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (27, N'The Name of the Rose', N'Umberto Eco', N'Italian', 50, N'Classics', CAST(N'2024-01-08T23:19:19.6366667' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'The Name of the Rose', N'Umberto Eco', N'Italian', 50, N'Classics')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (28, N'Stolz und Vorurteil', N'Jane Austen', N'German', 50, N'Classics', CAST(N'2024-01-08T23:19:19.6366667' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Stolz und Vorurteil', N'Jane Austen', N'German', 50, N'Classics')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (29, N'Don Quixote', N'Miguel de Cervantes', N'Spanish', 500, N'Classics', CAST(N'2024-01-08T23:19:19.6366667' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Don Quixote', N'Miguel de Cervantes', N'Spanish', 500, N'Classics')
 GO
-INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Sales], [Classyfy], [LDTS]) VALUES (30, N'Die Entdeckung der Langsamkeit', N'Sten Nadolny', N'German', 50, N'Novel', CAST(N'2024-01-08T23:19:19.6400000' AS DateTime2))
+INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Die Entdeckung der Langsamkeit', N'Sten Nadolny', N'German', 50, N'Novel')
 GO
 SET IDENTITY_INSERT [dbo].[T_Books] OFF
 GO
