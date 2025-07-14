@@ -1,10 +1,16 @@
-
-
+USE [TESTDB_LOCAL]
+GO
+/****** Object:  Table [dbo].[T_Books]    Script Date: 14.07.2025 14:43:47 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
 CREATE TABLE [dbo].[T_Books](
 	[PKID] [bigint] IDENTITY(1,1) NOT NULL,
 	[Title] [varchar](100) NULL,
 	[Author] [varchar](100) NULL,
 	[Language_origin] [varchar](80) NULL,
+	[Cost] [int] NULL,
 	[Sales] [int] NULL,
 	[Classyfy] [varchar](50) NULL,
 	[LDTS] [datetime2](7) NULL,
@@ -16,35 +22,35 @@ CREATE TABLE [dbo].[T_Books](
 GO
 SET IDENTITY_INSERT [dbo].[T_Books] ON 
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Der Herr der Ringe', N'J. R. R. Tolkien', N'German', 100, N'Fantasy')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (1, N'Der Herr der Ringe', N'J. R. R. Tolkien', N'German', 15, 100, N'Fantasy', CAST(N'2024-01-09T00:29:42.3666667' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Die Säulen der Erde', N'Ken Follett', N'German', 50, N'Novel')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (2, N'Die Säulen der Erde', N'Ken Follett', N'German', 7, 50, N'Novel', CAST(N'2024-01-09T00:29:42.3700000' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Harry Potter and the Philosopher''s Stone', N'J. K. Rowling', N'English', 120, N'Fantasy')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (3, N'Harry Potter and the Philosopher''s Stone', N'J. K. Rowling', N'English', 14, 120, N'Fantasy', CAST(N'2024-01-09T00:29:42.3733333' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'The Plague', N'Albert Camus', N'French', 12, N'Classics')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (4, N'The Plague', N'Albert Camus', N'French', 3, 12, N'Classics', CAST(N'2024-01-09T00:29:42.3733333' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Das Parfum', N'Patrick Süskind', N'Italian', 12, N'Poetry')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (5, N'Das Parfum', N'Patrick Süskind', N'Italian', 6, 12, N'Poetry', CAST(N'2024-01-09T00:29:42.3766667' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'War and Peace', N'Leo Tolstoy', N'Russian', 36, N'Classics')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (6, N'War and Peace', N'Leo Tolstoy', N'Russian', 6, 36, N'Classics', CAST(N'2024-01-09T00:29:42.3766667' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Nineteen Eighty-Four', N'George Orwell', N'English', 30, N'Classics')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (7, N'Nineteen Eighty-Four', N'George Orwell', N'English', 5, 30, N'Classics', CAST(N'2024-01-09T00:29:42.3800000' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Andromeda Nebula', N'Ivan Yefremov', N'Russian', 20, N'Science fiction')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (8, N'Andromeda Nebula', N'Ivan Yefremov', N'Russian', 19, 20, N'Science fiction', CAST(N'2024-01-09T00:29:42.3800000' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Der kleine Prinz', N'Antoine de Saint-Exupéry', N'German', 200, N'Kids')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (9, N'Der kleine Prinz', N'Antoine de Saint-Exupéry', N'German', 10, 200, N'Kids', CAST(N'2024-01-09T00:29:42.3800000' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'The Stranger', N'Albert Camus', N'French', 10, N'Classics')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (10, N'The Stranger', N'Albert Camus', N'French', 2, 10, N'Classics', CAST(N'2024-01-09T00:29:42.3833333' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'The Adventures of Pinocchio', N'Carlo Collodi', N'Italian', 35, N'Kids')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (11, N'The Adventures of Pinocchio', N'Carlo Collodi', N'Italian', 5, 35, N'Kids', CAST(N'2024-01-09T00:29:42.3833333' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'The Name of the Rose', N'Umberto Eco', N'Italian', 50, N'Classics')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (12, N'The Name of the Rose', N'Umberto Eco', N'Italian', 2, 50, N'Classics', CAST(N'2024-01-09T00:29:42.3866667' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Stolz und Vorurteil', N'Jane Austen', N'German', 50, N'Classics')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (13, N'Stolz und Vorurteil', N'Jane Austen', N'German', 10, 50, N'Classics', CAST(N'2024-01-09T00:29:42.3866667' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Don Quixote', N'Miguel de Cervantes', N'Spanish', 500, N'Classics')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (14, N'Don Quixote', N'Miguel de Cervantes', N'Spanish', 50, 500, N'Classics', CAST(N'2024-01-09T00:29:42.3900000' AS DateTime2))
 GO
-INSERT [dbo].[T_Books] ( [Title], [Author], [Language_origin], [Sales], [Classyfy]) VALUES ( N'Die Entdeckung der Langsamkeit', N'Sten Nadolny', N'German', 50, N'Novel')
+INSERT [dbo].[T_Books] ([PKID], [Title], [Author], [Language_origin], [Cost], [Sales], [Classyfy], [LDTS]) VALUES (15, N'Die Entdeckung der Langsamkeit', N'Sten Nadolny', N'German', 25, 50, N'Novel', CAST(N'2024-01-09T00:29:42.3900000' AS DateTime2))
 GO
 SET IDENTITY_INSERT [dbo].[T_Books] OFF
 GO
