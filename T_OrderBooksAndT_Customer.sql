@@ -1,17 +1,4 @@
-ALTER TABLE [dbo].[T_OrderBooks] DROP CONSTRAINT [DF_T_OrderBooks_LDTS]
-GO
-ALTER TABLE [dbo].[T_Customer] DROP CONSTRAINT [DF_T_Customer_LDTS]
-GO
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[T_OrderBooks]') AND type in (N'U'))
-DROP TABLE [dbo].[T_OrderBooks]
-GO
-IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[T_Customer]') AND type in (N'U'))
-DROP TABLE [dbo].[T_Customer]
-GO
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+
 CREATE TABLE [dbo].[T_Customer](
 	[PKID] [int] IDENTITY(1,1) NOT NULL,
 	[Anrede] [varchar](50) NULL,
