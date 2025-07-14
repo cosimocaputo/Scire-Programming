@@ -1,10 +1,5 @@
-USE [TESTDB_LOCAL]
-GO
-/****** Object:  Table [dbo].[T_Books]    Script Date: 14.07.2025 14:43:47 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+
+
 CREATE TABLE [dbo].[T_Books](
 	[PKID] [bigint] IDENTITY(1,1) NOT NULL,
 	[Title] [varchar](100) NULL,
